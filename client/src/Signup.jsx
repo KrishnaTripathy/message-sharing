@@ -11,7 +11,7 @@ function Signup() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('https://secret-server-z3u4.onrender.com/register', { name, email, password })
+    axios.post('https://secret-server-8r7i.onrender.com/register', { name, email, password })
       .then(result => {
         console.log(result);
         navigate('/login');

@@ -25,7 +25,7 @@ const PostSecret = () => {
       }
 
       const response = await axios.post(
-        'http://localhost:3001/home',
+        'https://secret-message-5ie3.onrender.com/home',
         { secret: userSecret, username },
         {
           headers: {
@@ -52,7 +52,7 @@ const PostSecret = () => {
     const fetchAllSecrets = async () => {
       try {
         const token = localStorage.getItem('authToken');
-        const response = await axios.get('http://localhost:3001/home', {
+        const response = await axios.get('https://secret-message-5ie3.onrender.com/home', {
           headers: {
             Authorization: `Bearer ${token}`,
           },

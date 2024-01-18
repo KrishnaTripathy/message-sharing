@@ -17,7 +17,7 @@ app.use(session({
 }));
 
 // Handle MongoDB connection properly
-mongoose.connect("mongodb+srv://krishnatripathy:Krishna%40250301@krishna.hcdyjma.mongodb.net/")
+mongoose.connect("mongodb+srv://krishnatripathy:Krishna%40250301@krishna.hcdyjma.mongodb.net/employee")
   .then(() => {
     console.log('Connected to MongoDB');
   })
